@@ -250,7 +250,7 @@ import type { Defu from 'defu';
         <v-spacer></v-spacer>
         <v-btn icon @click="dialog=true"><v-icon>mdi-cart</v-icon>{{ count }}</v-btn>   
         <!-- <v-btn icon="mdi-dots-vertical" id="menu-vertical"></v-btn> -->
-        <v-avatar color="info" class="mx-4">WL</v-avatar>
+        <v-avatar color="info" class="mx-4"><v-img src="/images/users/user.jpg"></v-img></v-avatar>
 
         <!-- <v-menu activator="#menu-vertical">
           <v-list>
@@ -304,11 +304,17 @@ import type { Defu from 'defu';
      
       <v-navigation-drawer v-model="drawer"  temporary>
           <v-list>
-            <v-list-item v-for="(menuitem,index) in menuitems" :key="index">
+            <v-list-item v-for="(menuitem,index) in menuitems" :key="index" :href="menuitem.to">
               <v-list-item-title><v-icon>{{ menuitem.icon }}</v-icon>&nbsp{{ menuitem.title }}</v-list-item-title>
             </v-list-item>
           </v-list>
       </v-navigation-drawer>
+
+      <div class="text-h5 text-center text-white font-weight-bold mt-0"> 
+        <span><v-icon icon="mdi-cart-arrow-down"></v-icon> ( Items: {{ count }} </span>&nbsp&nbsp
+        <span>,Total: {{ total }} )</span>
+      </div>
+
       <v-row class="mt-1">       
         <v-col v-for="(asset,assetIndex) in assets.filter((x) => x.type === 'dryer')" :key="asset.uuid" cols="2" justify="center">
           <v-row justify="center" align="center">
@@ -373,14 +379,11 @@ import type { Defu from 'defu';
           </v-row>
         </v-col>  
       </v-row> 
-      
-      <div class="text-h5 text-center text-white font-weight-bold mt-0"> 
-        <span><v-icon icon="mdi-cart"></v-icon> [ Item: {{ count }}</span>&nbsp&nbsp
-        <span>,Total: {{ total }} ]</span>
-        <div>
+      <div class="text-center ">
+        
           <v-btn width="300" class="ma-2" color="primary" style="font-size:1.3vw" title="Submit" prepend-icon="mdi-cart-check" @click="dialog=true">Submit</v-btn>
           <v-btn width="300" class="ma-2" style="font-size:1.3vw" title="Clear all item from cart" prepend-icon="mdi-cart-remove">Clear Cart</v-btn>
-        </div>
+        
       </div>
     </v-container>    
   </div>
