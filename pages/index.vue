@@ -41,7 +41,7 @@
         </v-col>
         <v-col cols="12" md="5" lg="6">
           <v-img
-            src="/images/kiosk/NewWasher-Blue.png"
+            src="/images/landingpage/banner-img.png"
             alt="banner"
             class="heroimg mt-8"
           />

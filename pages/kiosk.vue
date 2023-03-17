@@ -335,10 +335,10 @@ import type { Defu from 'defu';
             </div>
           </v-row>
           <v-row align="center" justify="center" class="mb-1">
-            <v-img v-if="asset.state ==='ready'" src="https://www.flipup.net/wp-content/uploads/2020/11/DryerFlip-Green.jpg" height="180" alt="kiosk"  :title="asset.state" @click="addItem(asset.uuid,pickedList[0][assetIndex])"/>
-            <v-img v-if="asset.state ==='booked'" src="https://www.flipup.net/wp-content/uploads/2020/11/DryerFlip-Blue.jpg" height="180" alt="kiosk"  :title="asset.state"  @click="removeItem(asset.uuid,pickedList[0][assetIndex])"/>
-            <v-img v-if="asset.state ==='busy'" src="https://www.flipup.net/wp-content/uploads/2020/11/DryerFlip-Red.jpg" height="180" alt="kiosk"  :title="asset.state" />
-            <v-img v-if="asset.state ==='offline'" src="https://www.flipup.net/wp-content/uploads/2020/11/DryerFlip-Gray.jpg" height="180" alt="kiosk"  :title="asset.state"/>
+            <v-img v-if="asset.state ==='ready'" src="/images/kiosk/NewDryer-Green.png" height="180" alt="kiosk"  :title="asset.state" @click="addItem(asset.uuid,pickedList[0][assetIndex])"/>
+            <v-img v-if="asset.state ==='booked'" src="/images/kiosk/NewDryer-Blue.png" height="180" alt="kiosk"  :title="asset.state"  @click="removeItem(asset.uuid,pickedList[0][assetIndex])"/>
+            <v-img v-if="asset.state ==='busy'" src="/images/kiosk/NewDryer-Red.png" height="180" alt="kiosk"  :title="asset.state" />
+            <v-img v-if="asset.state ==='offline'" src="/images/kiosk/NewDryer-Gray.png" height="180" alt="kiosk"  :title="asset.state"/>
           </v-row>
         </v-col>  
       </v-row> 
@@ -366,10 +366,10 @@ import type { Defu from 'defu';
             </div>
           </v-row>
           <v-row align="center" justify="center"  class="mb-1">
-            <v-img v-if="asset.state ==='ready'" src="https://www.flipup.net/wp-content/uploads/2020/11/Wash-Green.jpg" alt="kiosk" height="180" :title="asset.state"  @click="addItem(asset.uuid,pickedList[1][assetIndex])"/>
-            <v-img v-if="asset.state ==='booked'" src="https://www.flipup.net/wp-content/uploads/2020/11/Wash-Blue.jpg" alt="kiosk"  height="180" :title="asset.state" @click="removeItem(asset.uuid,pickedList[1][assetIndex])"/>
-            <v-img v-if="asset.state ==='busy'" src="https://www.flipup.net/wp-content/uploads/2020/11/Wash-Red.jpg" alt="kiosk" height="180" :title="asset.state"/>
-            <v-img v-if="asset.state ==='offline'" src="https://www.flipup.net/wp-content/uploads/2020/11/Wash-Gray.jpg" alt="kiosk" height="180" :title="asset.state"/>
+            <v-img v-if="asset.state ==='ready'" src="/images/kiosk/NewWasher-Green.png" alt="kiosk" height="180" :title="asset.state"  @click="addItem(asset.uuid,pickedList[1][assetIndex])"/>
+            <v-img v-if="asset.state ==='booked'" src="/images/kiosk/NewWasher-Blue.png" alt="kiosk"  height="180" :title="asset.state" @click="removeItem(asset.uuid,pickedList[1][assetIndex])"/>
+            <v-img v-if="asset.state ==='busy'" src="/images/kiosk/NewWasher-Red.png" alt="kiosk" height="180" :title="asset.state"/>
+            <v-img v-if="asset.state ==='offline'" src="/images/kiosk/NewWasher-Gray.png" alt="kiosk" height="180" :title="asset.state"/>
           </v-row>
         </v-col>  
       </v-row> 
