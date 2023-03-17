@@ -234,10 +234,10 @@
               <v-col cols="3"> 
                   <!-- <v-img v-if="asset.status === 'READY'" :src="active?'/images/kiosk/newWasher-Green.png':'/images/kiosk/newWasher-Blue.png'" alt="kiosk" height="120"></v-img> -->
                   
-                  <v-img v-if="asset.status === 'READY'" src="/images/kiosk/newWasher-Green.png" alt="kiosk" height="120"></v-img>
-                  <v-img v-if="asset.status === 'BUSY'" src="/images/kiosk/newWasher-Red.png" alt="kiosk" height="120"></v-img>
-                  <v-img v-if="asset.status === 'OFFLINE'" src="/images/kiosk/newWasher-Gray.png" alt="kiosk" height="120"></v-img>
-                  <v-img v-if="asset.status === 'BOOKED'" src="/images/kiosk/newWasher-Blue.png" alt="kiosk" height="120"></v-img>
+                  <v-img v-if="asset.status === 'READY'" src="/static/images/kiosk/newWasher-Green.png" alt="kiosk" height="120"></v-img>
+                  <v-img v-if="asset.status === 'BUSY'" src="/static/images/kiosk/newWasher-Red.png" alt="kiosk" height="120"></v-img>
+                  <v-img v-if="asset.status === 'OFFLINE'" src="/static/images/kiosk/newWasher-Gray.png" alt="kiosk" height="120"></v-img>
+                  <v-img v-if="asset.status === 'BOOKED'" src="/static/images/kiosk/newWasher-Blue.png" alt="kiosk" height="120"></v-img>
               </v-col>
             </v-row>
             <v-row style="height: 1vh"> 

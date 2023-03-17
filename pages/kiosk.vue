@@ -335,10 +335,10 @@ import type { Defu from 'defu';
             </div>
           </v-row>
           <v-row align="center" justify="center" class="mb-1">
-            <v-img v-if="asset.state ==='ready'" src="/images/kiosk/newWasher-Green.png" height="180" alt="kiosk"  :title="asset.state" @click="addItem(asset.uuid,pickedList[0][assetIndex])"/>
-            <v-img v-if="asset.state ==='booked'" src="/images/kiosk/newWasher-Blue.png" height="180" alt="kiosk"  :title="asset.state"  @click="removeItem(asset.uuid,pickedList[0][assetIndex])"/>
-            <v-img v-if="asset.state ==='busy'" src="/images/kiosk/newWasher-Red.png" height="180" alt="kiosk"  :title="asset.state" />
-            <v-img v-if="asset.state ==='offline'" src="/images/kiosk/newWasher-Gray.png" height="180" alt="kiosk"  :title="asset.state"/>
+            <v-img v-if="asset.state ==='ready'" src="/static/images/kiosk/newWasher-Green.png" height="180" alt="kiosk"  :title="asset.state" @click="addItem(asset.uuid,pickedList[0][assetIndex])"/>
+            <v-img v-if="asset.state ==='booked'" src="/static/images/kiosk/newWasher-Blue.png" height="180" alt="kiosk"  :title="asset.state"  @click="removeItem(asset.uuid,pickedList[0][assetIndex])"/>
+            <v-img v-if="asset.state ==='busy'" src="/static/images/kiosk/newWasher-Red.png" height="180" alt="kiosk"  :title="asset.state" />
+            <v-img v-if="asset.state ==='offline'" src="/static/images/kiosk/newWasher-Gray.png" height="180" alt="kiosk"  :title="asset.state"/>
           </v-row>
         </v-col>  
       </v-row> 
@@ -366,10 +366,10 @@ import type { Defu from 'defu';
             </div>
           </v-row>
           <v-row align="center" justify="center"  class="mb-1">
-            <v-img v-if="asset.state ==='ready'" src="/images/kiosk/newWasher-Green.png" alt="kiosk" height="180" :title="asset.state"  @click="addItem(asset.uuid,pickedList[1][assetIndex])"/>
-            <v-img v-if="asset.state ==='booked'" src="/images/kiosk/newWasher-Blue.png" alt="kiosk"  height="180" :title="asset.state" @click="removeItem(asset.uuid,pickedList[1][assetIndex])"/>
-            <v-img v-if="asset.state ==='busy'" src="/images/kiosk/newWasher-Red.png" alt="kiosk" height="180" :title="asset.state"/>
-            <v-img v-if="asset.state ==='offline'" src="/images/kiosk/newWasher-Gray.png" alt="kiosk" height="180" :title="asset.state"/>
+            <v-img v-if="asset.state ==='ready'" src="/static/images/kiosk/newWasher-Green.png" alt="kiosk" height="180" :title="asset.state"  @click="addItem(asset.uuid,pickedList[1][assetIndex])"/>
+            <v-img v-if="asset.state ==='booked'" src="/static/images/kiosk/newWasher-Blue.png" alt="kiosk"  height="180" :title="asset.state" @click="removeItem(asset.uuid,pickedList[1][assetIndex])"/>
+            <v-img v-if="asset.state ==='busy'" src="/static/images/kiosk/newWasher-Red.png" alt="kiosk" height="180" :title="asset.state"/>
+            <v-img v-if="asset.state ==='offline'" src="/static/images/kiosk/newWasher-Gray.png" alt="kiosk" height="180" :title="asset.state"/>
           </v-row>
         </v-col>  
       </v-row> 
