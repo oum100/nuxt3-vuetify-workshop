@@ -1,0 +1,6 @@
+export const useCounter = () => useState<number>('counter', () => 0)
+export const useColor = () => useState<string>('color', () => 'pink')
+export const useStatus = () => useState<string>('status', () => 'READY')
+export const useMachine = () => useState<number[][]>('machine',() => [[0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0]])
+export const useCart = () => useState<string[]>('cart', () => [])
+export const useAsset = () => useState<string[]>('assets', () => [])
