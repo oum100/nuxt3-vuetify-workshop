@@ -250,7 +250,7 @@ import type { Defu from 'defu';
         <v-spacer></v-spacer>
         <v-btn icon @click="dialog=true"><v-icon>mdi-cart</v-icon>{{ count }}</v-btn>   
         <!-- <v-btn icon="mdi-dots-vertical" id="menu-vertical"></v-btn> -->
-        <v-avatar color="info" class="mx-4"><v-img src="/images/users/user.jpg"></v-img></v-avatar>
+        <v-avatar color="info" class="mx-4"><v-img src="/images/users/Alva-Hi.png"></v-img></v-avatar>
 
         <!-- <v-menu activator="#menu-vertical">
           <v-list>
@@ -316,7 +316,7 @@ import type { Defu from 'defu';
       </div>
 
       <v-row class="mt-1">       
-        <v-col v-for="(asset,assetIndex) in assets.filter((x) => x.type === 'dryer')" :key="asset.uuid" cols="2" justify="center">
+        <v-col v-for="(asset,assetIndex) in assets.filter((x) => x.type === 'dryer')" :key="asset.uuid" justify="center" class="v-col-lg-2 v-col-4">
           <v-row justify="center" align="center">
             <div class="text-h6 text-center text-white font-weight-bold">{{asset.assetName}}</div>
           </v-row>
@@ -349,7 +349,7 @@ import type { Defu from 'defu';
         </v-col>  
       </v-row> 
       <v-row class="mt-1" justify="center" align="center">       
-        <v-col v-for="(asset,assetIndex) in assets.filter((x) => x.type === 'washer')" :key="asset.uuid" cols="2" justify="center">
+        <v-col v-for="(asset,assetIndex) in assets.filter((x) => x.type === 'washer')" :key="asset.uuid"  justify="center" class="v-col-lg-2 v-col-4">
           <v-row justify="center" align="center">
             <div class="text-h6 text-center text-white font-weight-bold">{{asset.assetName}}</div>
           </v-row>
